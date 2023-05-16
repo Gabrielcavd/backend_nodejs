@@ -3,7 +3,7 @@ import livros from "./livroRoutes.js"
 
 const routes = (app) => {
     app.route('/').get((req, res) => {
-        res.status(200).send('Livraria cultura');
+        res.status(200).send('Livraria teste');
     })
 
     app.use(
