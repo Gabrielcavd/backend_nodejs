@@ -10,6 +10,12 @@ const routes = (app) => {
         express.json(),
         livros
     )
+
+    app.use(
+        (req, res) => {
+            res.status(404).send("deu merda")
+        }
+    )
 }
 
 export default routes

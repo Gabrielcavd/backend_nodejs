@@ -2,7 +2,7 @@ import {db} from '../config/db.js'
 
 class LivroController{
 
-    static listarLivros = (_, res) => {
+    static listarLivros = (req, res) => {
         const q = "SELECT * FROM livros";
         db.query(q, (err, data) => {
             if (err) return res.json(err);
